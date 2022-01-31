@@ -43,7 +43,7 @@ module.exports = {
         'react/jsx-props-no-spreading': 'off',
         'linebreak-style': 'off',
         'eol-last': 'off',
-        'max-len': ['warn', { code: 80 }],
+        'max-len': ['error', { code: 80 }],
         'import/extensions': ['error', 'never', { svg: 'always' }],
         'simple-import-sort/exports': 'error',
         'simple-import-sort/imports': [

@@ -3,6 +3,8 @@ import ReactDOM from 'react-dom'
 import { QueryClient, QueryClientProvider } from 'react-query'
 import { BrowserRouter } from 'react-router-dom'
 
+import './i18n'
+
 import App from './App'
 
 const queryClient = new QueryClient()
