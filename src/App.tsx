@@ -1,4 +1,3 @@
-import { Suspense } from 'react'
 import { Link, Outlet, Route, Routes } from 'react-router-dom'
 
 import Example from './pages/Example'
@@ -21,14 +20,7 @@ const App = (): JSX.Element => (
       <Route index element={<Home />} />
       <Route path="example">
         <Route index element={<Example />} />
-        <Route
-          path=":exampleId"
-          element={
-            <Suspense fallback={<>...</>}>
-              <ExampleDetail />
-            </Suspense>
-          }
-        />
+        <Route path=":exampleId" element={<ExampleDetail />} />
       </Route>
       <Route path="*" element={<NoMatch />} />
     </Route>
