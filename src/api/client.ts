@@ -1,10 +1,10 @@
 import axios, { AxiosError, AxiosInstance } from 'axios'
 
-import { envConfig } from '../constants'
+import { EnvConfig } from '../constants'
 
 const createClient = (): AxiosInstance => {
   const newClient = axios.create({
-    baseURL: envConfig.apiBaseUrl,
+    baseURL: EnvConfig.apiBaseUrl,
   })
 
   newClient.interceptors.response.use(

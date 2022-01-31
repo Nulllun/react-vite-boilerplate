@@ -1,7 +1,3 @@
-type EnvConfig = {
-  apiBaseUrl: string
-}
-
-export const envConfig: EnvConfig = {
+export const EnvConfig = {
   apiBaseUrl: import.meta.env.VITE_API_BASE_URL || '',
 }
