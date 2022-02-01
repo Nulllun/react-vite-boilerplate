@@ -8,7 +8,7 @@ import Home from './pages/Home'
 import NoMatch from './pages/NoMatch'
 
 const AppLayout = (): JSX.Element => {
-  const { t, i18n } = useTranslation()
+  const { t, i18n } = useTranslation(['glossary', 'misc'])
 
   const toggleLanguage = (): void => {
     if (i18n.language === 'zh') {
