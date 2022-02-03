@@ -21,7 +21,7 @@ i18n
   // for all options read: https://www.i18next.com/overview/configuration-options
   .init({
     backend: {
-      loadPath: 'src/locales/{{lng}}/{{ns}}.json',
+      loadPath: '/src/locales/{{lng}}/{{ns}}.json',
     },
     fallbackLng: 'en',
     debug: true,
